@@ -1,2 +1,3 @@
 "file 2" 
 test modified file
+then changes to the files.
