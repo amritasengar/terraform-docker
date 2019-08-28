@@ -2,8 +2,14 @@
 # creating the first resource with terraform 
 
 
+variable "image" {
+  description = "name of the image"
+  default = "ghost:latest"
+}
+
+
 resource "docker_image" "image_id" {
-  name = "ghost:latest"
+  name = "${var.image}"
 }
 
 
